@@ -28,7 +28,7 @@ With this Event you are able to remove the last character. In the current versio
 
 ### ClearText
 
-Clear Text is a Event which clears the Text box.
+Clear Text is an Event which clears the Text box.
 
 
 ### EventCalled
@@ -40,7 +40,7 @@ To call an Event use this syntax "[EventName]". This will return the string and 
 
 ### AnimationFinished
 
-"AnimationFinished" is a Dispatacher that is being called when the animation stops. There are only two possible outcoes either the loop is finished that means the condition "paused" is false or it was paused with the "PauseText" Event which of course leadst to the condition "paused" being true.
+"AnimationFinished" is a Dispatacher that is being called when the animation stops. There are only two possible outcomes, either the loop is finished that means the condition "paused" is false or it was paused with the "PauseText" Event, which of course least to the condition "paused" being true.
 
 ![AnimFinish](https://github.com/user-attachments/assets/b6c6d413-e7c1-47f0-9140-e327b3c422d6)
 
@@ -50,7 +50,7 @@ To call an Event use this syntax "[EventName]". This will return the string and 
 The Event "PauseText" is pausing the spawning of the characters and the loop which is also callable by using "|". Use the "ContinueText" event to continue. "ContinueText" is only going to work if it has been pause before.
 
 ### ForLoopWithBreak_Delayed
-The main functionalty comes from the custom "ForLoopWithBreak_Delayed" Macro, which gives the user the ability to create a for each loop with a delay in between that can be skipped with a boolean.
+The main functionalty comes from the custom "ForLoopWithBreak_Delayed" Macro, which gives the user the ability to create a for each loop with a delay in between, that can be skipped with a boolean.
 
 ![ForEachLoop](https://github.com/user-attachments/assets/2ed8fb0e-bd31-4deb-b919-96f76892cbc8)
 
