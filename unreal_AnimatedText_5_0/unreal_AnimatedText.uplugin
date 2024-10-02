@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "unreal_AnimatedText",
+	"Description": "AnimatedTextPlugin",
+	"Category": "Other",
+	"CreatedBy": "dev_meyav",
+	"CreatedByURL": "https://x.com/dev_meyav",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.0.0",
+	"CanContainContent": true,
+	"Installed": true
+}
