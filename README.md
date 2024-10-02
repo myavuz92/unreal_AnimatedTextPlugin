@@ -56,7 +56,7 @@ The main functionalty comes from the custom "ForLoopWithBreak_Delayed" Macro, wh
 
 ## Example
 
-An example map is included in the plugin.
+An example widget is included in the plugin.
 
 ## Modify
 
