@@ -10,72 +10,70 @@ This plugin currently supports Animated Text Block, Rich Text and CommonUI Text.
 ## Functionality
 
 ### AnimateText
-Feed a string into the "AnimateText" Event to have it animated.
+Enter a string into the "AnimateText" event to animate it, constructing the word letter by letter.
 
 ![AnimateText](https://github.com/user-attachments/assets/aec95dfc-3aa7-484c-96b4-729492898146)
 
 
 ### ChangeSpeed
-You can simply change the speed of the creation of the next character by changing the "DelayBetweenCharacters" Value, or adjust the "SpeedChangePerLoop" Value to increase or decrease the speed of the text until hitting the MinSpeed or MaxSpeed.
+You can easily modify the speed at which the next character appears by adjusting the "DelayBetweenCharacters" value. Additionally, you can change the "SpeedChangePerLoop" value to speed up or slow down the text until it reaches the MinSpeed or MaxSpeed limits.
 
 ![ChangeSpeed](https://github.com/user-attachments/assets/eeb03495-d471-4229-b192-c078272e8391)
 
 
 ### DeleteLastCharacter
-With this Event you are able to remove the last character. In the current version you can also remove the last character with "-".
+This event allows you to remove the last character. In the current version, you can also remove it by using the "-" character.
 
 ![DeleteLastChar](https://github.com/user-attachments/assets/cbe19243-7662-406b-8a10-470b5c01f4d8)
 
 ### ClearText
 
-Clear Text is an Event which clears the Text box.
+The Clear Text event clears the text box.
 
 
 ### EventCalled
 
-To call an Event use this syntax "[EventName]". This will return the string and you are able to call whatever you want by using "Switch on String".
+To invoke an event, use the syntax "[EventName]." This will return the string, allowing you to utilize "Switch on String" to call whatever you need.
 
 ![CallEvents](https://github.com/user-attachments/assets/4627a487-22e6-4998-b4a0-7759335aad92)
 
 
 ### AnimationFinished
 
-"AnimationFinished" is a Dispatacher that is being called when the animation stops. There are only two possible outcomes, either the loop is finished that means the condition "paused" is false or it was paused with the "PauseText" Event, which of course least to the condition "paused" being true.
+"AnimationFinished" is a dispatcher that is triggered when the animation stops. There are two possible outcomes: either the loop has completed, indicating that the "paused" condition is false, or the animation was paused using the "PauseText" event, which results in the "paused" condition being true.
 
 ![AnimFinish](https://github.com/user-attachments/assets/b6c6d413-e7c1-47f0-9140-e327b3c422d6)
 
 
 ### PauseText and ContinueText
 
-The Event "PauseText" is pausing the spawning of the characters and the loop which is also callable by using "|". Use the "ContinueText" event to continue. "ContinueText" is only going to work if it has been pause before.
+The "PauseText" event pauses the spawning of characters and the loop, which can also be invoked using "|". To resume, use the "ContinueText" event. Note that "ContinueText" will only function if the animation was previously paused.
 
 ### ForLoopWithBreak_Delayed
-The main functionalty comes from the custom "ForLoopWithBreak_Delayed" Macro, which gives the user the ability to create a for each loop with a delay in between, that can be skipped with a boolean.
+The primary functionality is provided by the custom "ForLoopWithBreak_Delayed" macro, which enables users to create a for-each loop with a delay in between that can be skipped using a boolean value.
 
 ![ForEachLoop](https://github.com/user-attachments/assets/2ed8fb0e-bd31-4deb-b919-96f76892cbc8)
 
 ## Example
 
-An example widget is included in the plugin.
+The plugin includes an example widget.
 
 ## Modify
 
-To modify existing functionalities or create new functionalities modify the "Switch on String". This Switch is only checking the last character and can easily be modified.
+To alter existing functionalities or create new ones, adjust the "Switch on String." This switch only checks the last character and can be easily modified.
 
 ![SoS](https://github.com/user-attachments/assets/fd8ae423-a2d6-4313-81c3-553ddab53b3c)
 
 
 ## Exposed Variables
 
-All of the Animated Text Assets have Speed Settings exposed which includes "Delay Between Characters", "Speed change per loop", "Min Speed" and "Max Speed".
-I have also expsed two SFX settings exposed. These are "Click SFX" (which is being used when adding a character) and "Delete SFX" (which is being used when deleting a character).
-The initial settings depends on which type of Animated Text you are using for example the Animated Rich Text has the TextStyleSet which is a Datatable input.
+All Animated Text Assets feature exposed speed settings, including "Delay Between Characters," "Speed Change per Loop," "Min Speed," and "Max Speed." Additionally, two sound effect settings are available: "Click SFX" (used when adding a character) and "Delete SFX" (used when deleting a character). The initial settings vary depending on the type of Animated Text you are using; for instance, the Animated Rich Text includes a TextStyleSet, which is a DataTable input.
 
 ![ExposedVar](https://github.com/user-attachments/assets/985b9e08-4b22-4e7c-8055-eab7affca87e)
 
 
 ## Limitations
 
-#### Characters which are being used in the "Switch on String" can not be used as Text Characters.
+#### Characters utilized in the "Switch on String" cannot be used as text characters.
 
-#### Currently only Rich Text is supporting multiple fontsizes or text styles. 
+#### Currently, only Rich Text supports multiple font sizes or text styles.
